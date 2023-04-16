@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            height: 400px;
+            width: 400px;
+            border: 1px solid;
+            border-radius: 50%;
+            background-color: rgb(51, 16, 81);
+            margin-top: 100px;
+            margin-left: 400px;
+        }
+        .e{
+            height: 100px;
+            width: 100px;
+            border: 3px solid aqua;
+            display: inline-block;
+            margin-left: 63px;
+            margin-top: 90px;
+           border-radius: 50%;
+           background-color: aliceblue;
+           animation-name: eye;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+        }
+        .e:hover{
+            height: 130px;
+            width: 130px;
+            border: 6px solid red;
+            border-radius: 50%;
+        }
+        #m{
+            height: 30px;
+            width: 150px;
+            border: 1px solid;
+            margin-top: 58px;
+            margin-left: 120px;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            background-color: red;
+        }
+        #e1{
+            height: 20px;
+            width: 20px;
+            border: 1px solid;
+            margin-top: 20px;
+            margin-left: 30px;
+            border-radius: 50%;
+            background-image:repeating-radial-gradient(white 2%,black 3%);
+            
+        }
+        #m:hover{
+            height:100px;
+            width: 150px;
+            border: 1px solid;
+            background-color: aliceblue;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            background-color: hotpink;
+        }
+        @keyframes eye {
+            from{
+               transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div class="e" >
+            <div id="e1"></div>
+        </div>
+        <div class="e" >
+            <div id="e1"></div>
+        </div>
+        <div id="m"></div>
+    </div>
+</body>
+</html>

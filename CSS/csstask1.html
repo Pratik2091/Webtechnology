@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css">
+    <style>
+        #parent{
+        
+            height: 400px;
+            width: 300px;
+            border: 2px solid;
+            background-color: black;
+            padding-top: 20px;
+            margin-left: 450px;
+            border-radius: 5%;
+        }
+        #child{
+            height: 100px;
+            color: aliceblue;
+            margin-left: 80px;
+            margin-top: 20px;
+        }
+        #io{
+            font-size: 50px;
+            color: blue;
+            margin-left: 50px;
+        }
+        #text{
+            border: none;
+            outline: none;
+            border-bottom: 0.5px solid white;
+            background-color: black;
+            color: aliceblue;
+        }
+        #btn{
+            margin-left: 100px;
+            background-color: azure;
+            color: black;
+            border-radius: 20%;
+            margin-top: 30px;
+            font-size:20px ;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <h1 id="child">Sign Up</h1>
+        <i id="io" class="fa fa-user-o" aria-hidden="true"></i>
+        <input type="text" placeholder="username" id="text">
+        <br>
+        <br>
+        <i id="io" class="fa fa-envelope" aria-hidden="true"></i>
+        <input type="email" name="email" placeholder="email" id="text">
+        <br>
+        <br>
+        <input type="submit" value="SUBMIT" id="btn">
+    </div>
+</body>
+</html>
