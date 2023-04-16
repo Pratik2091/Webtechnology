@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let obj={
+        //     key1:"value1"
+        //     key2:"value2"
+        //  }
+        // //add():use to add an element
+        // obj.key3="value3"
+        // console.log(obj);
+        // obj.key4="value"
+        // console.log(obj);
+        // //freeze ():it is used to freeze the object it means that we can update or modify an object
+        // console.log(object.freeze(obj));
+        // obj.key5="value"
+        // console.log(obj);
+
+            //seal1
+        let seal1={
+            name: "seal",
+            type:"objectmethod"
+        }
+        // console.log(Object.seal(seal1));
+        // seal1.key3="value3"
+        // console.log(seal1);
+        // seal1.name="seal2"
+        // console.log(seal1);
+
+        //delete :it is used to delete an element
+        // delete seal1.name
+        // console.log(seal1);
+
+
+        //entries():it is used to convert an object into an ARRAY
+        let ent={
+            name:"apple",
+            type:"fruits",
+            colour:"red"
+        }
+        // console.log(ent);
+        // console.log(Object.entries(ent));
+        //valuea():IT IS USED TO FEATCHING THE VALUE OF AN OBJECT
+        // console.log(Object.value(ent));
+        //keys():IT IS USED TO FEATCHING THE KEY OF AN OBJECT
+        // console.log(Object.keys(ent));
+
+
+
+        // assign
+        let obj1={
+            name:"abc",
+            age:45
+        }
+        let obj2={
+            bgroup:"AB+",
+            contact:1234,
+            name:"xyz"
+        }
+        console.log(Object.assign(obj1,obj2));
+
+
+
+    </script>
+</body>
+</html>

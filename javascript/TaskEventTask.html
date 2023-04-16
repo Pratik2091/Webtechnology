@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+          <input type="text"  id="inp1">
+          <input type="text" id="inp2">
+          <p id="print"></p>
+        <button onclick="getAdd()">+</button>
+        <button onclick="getSubstract()">-</button>
+        <button onclick="getMulti()">*</button>
+        <button onclick="getDivide()">/</button>
+
+    <script>
+        function getAdd() {
+            let ele1=document.getElementById("inp1").value;
+            let ele2=document.getElementById("inp2").value;
+            let pri1=document.getElementById("print")
+            pri1.innerHTML="Addition is "+ (Number(ele1)+Number(ele2));
+            pri1.style.tabSize="10px"
+        }
+        function getSubstract() {
+            let ele1=document.getElementById("inp1").value;
+            let ele2=document.getElementById("inp2").value;
+            let pri1=document.getElementById("print")
+            pri1.innerHTML="substraction is "+ (Number(ele1)-Number(ele2));
+            pri1.style.tabSize="10px"
+        }
+        function getMulti() {
+            let ele1=document.getElementById("inp1").value;
+            let ele2=document.getElementById("inp2").value;
+            let pri1=document.getElementById("print")
+            pri1.innerHTML="Multiplication is "+ (Number(ele1)*Number(ele2));
+            pri1.style.tabSize="10px"
+        }
+        function getDivide() {
+            let ele1=document.getElementById("inp1").value;
+            let ele2=document.getElementById("inp2").value;
+            let pri1=document.getElementById("print")
+            pri1.innerHTML="Division is "+ (Number(ele1)/Number(ele2));
+            pri1.style.tabSize="10px"
+        }
+    </script>
+</body>
+</html>

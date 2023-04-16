@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function declariartion
+        // FUNCTION CALL STATEMENT
+        demo()//fun hosting
+        function demo() {
+            console.log("non parameterised fun declariation");
+        }
+        // function expression
+        var fun1=function demo(){
+            console.log("this is fun expression");
+        }
+        fun1()//function call statement
+
+        // Anonymous function
+        let an=function () {
+            console.log("THIS IS AN AUTONOMOUS FUNCTION");
+        }
+        an();
+
+        // ARROW FUNCTION
+        let arr= ()=>{
+            console.log("This is an ARROW function");
+        }
+        arr(10,20);//function call statment(caller)
+
+        //IIFE
+        (function (){
+            console.log("this is IIFE");
+        })
+    </script>
+</body>
+</html>

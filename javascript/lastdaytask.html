@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit="getBlur()">
+            <label for="" >NAME:</label>
+            <input type="text" id="inp1" onfocus="getFocus()"><br><br>
+            <label for="">EMAIL:</label>
+            <input type="email" name="" id="eml"><br><br>
+            <button >submit</button>
+           <label for="" id="pr1"></label><br><br>
+           <label for="" id="pr2"></label>
+    </form>
+    <script>
+        function getFocus() {
+            let ele1=document.getElementById("inp1")
+            ele1.style.backgroundColor="red"
+           }  
+           function getBlur() {
+                    let ele2=document.getElementById("eml").value;
+                    let ele1=document.getElementById("inp1").value;
+                    let pri1=document.getElementById("pr1")
+                       let pri2=document.getElementById("pr2")
+                        pri1.innerHTML="name:"+ele2
+                        pri2.innerHTML="Email:"+ele2
+                    if (ele2=="example123@gmail.com") {
+                        window.alert("you response submit")
+                    }
+                    else{
+                        window.alert("you r enter wrong email")
+                    }
+                }
+    </script>
+</body>
+</html>

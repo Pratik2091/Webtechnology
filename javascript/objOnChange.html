@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="" id="car" onchange="getCar()">
+        <option value="LAMBO">LAMBO</option>
+        <option value="THAR">THAR</option>
+        <option value="FORTUNER">fortuner</option>
+        <option value="ENDAVOUR">Enadvour</option>
+    </select>
+    <p id="print"></p>
+    <script>
+        function getCar() {
+          let ele=document.getElementById("car").value;
+            let pr1=document.getElementById("print");
+            pr1.innerHTML="your selected option is "+ ele;
+
+            
+        }
+    </script>
+</body>
+</html>

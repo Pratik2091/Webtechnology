@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            height: 350px;
+            width: 150px;
+            background-color: rgb(0, 0, 0);
+            margin: auto;
+        }
+       .bulb{
+            height: 100px;
+            width: 100px;
+            border: 1px solid rgb(247, 240, 240);
+            border-radius: 50%;
+            margin-top: 23px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+      <div class="bulb"></div>
+      <div class="bulb"></div>
+      <div class="bulb"></div>
+    </div>
+    <script>
+        var signal=prompt("enter the choice")
+        let ele=document.getElementsByClassName("bulb")
+        if (signal== "stop") {
+            ele[0].style.backgroundColor="red"
+        }
+         else if(signal=="caution") {
+            ele[1].style.backgroundColor="orange"            
+        }
+        else if(signal== "go") {
+            ele[2].style.backgroundColor="green"
+        }
+    </script>
+</body>
+</html>
